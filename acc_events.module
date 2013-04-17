@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Access Events feature.
+ */
+
+include_once 'acc_events.features.inc';
