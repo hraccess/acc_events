@@ -22,6 +22,11 @@ function acc_events_feeds_importer_default() {
       'config' => array(
         'allowed_extensions' => 'txt csv tsv xml opml',
         'direct' => FALSE,
+        'directory' => 'private://feeds',
+        'allowed_schemes' => array(
+          0 => 'public',
+          1 => 'private',
+        ),
       ),
     ),
     'parser' => array(
@@ -52,9 +57,10 @@ function acc_events_feeds_importer_default() {
             'unique' => FALSE,
           ),
         ),
-        'update_existing' => '2',
+        'update_existing' => '0',
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
+        'bundle' => 'access_constraint_type',
       ),
     ),
     'content_type' => '',
