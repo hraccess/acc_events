@@ -15,3 +15,5 @@ features[feeds_importer][] = acc_access_events
 features[field_base][] = field_access_event
 features[field_instance][] = taxonomy_term-access_constraint_type-field_access_constraint
 features_exclude[field][taxonomy_term-access_constraint_type-field_access_constraint] = taxonomy_term-access_constraint_type-field_access_constraint
+features[taxonomy][] = acc_events
+
