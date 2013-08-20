@@ -18,15 +18,12 @@ function acc_events_feeds_importer_default() {
     'name' => 'CSV Access Events',
     'description' => 'Import Access Events from CVS file for Access Humanitarian project',
     'fetcher' => array(
-      'plugin_key' => 'FeedsFileFetcher',
+      'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
-        'allowed_extensions' => 'txt csv tsv xml opml',
-        'direct' => FALSE,
-        'directory' => 'private://feeds',
-        'allowed_schemes' => array(
-          0 => 'public',
-          1 => 'private',
-        ),
+        'auto_detect_feeds' => FALSE,
+        'use_pubsubhubbub' => FALSE,
+        'designated_hub' => '',
+        'request_timeout' => NULL,
       ),
     ),
     'parser' => array(

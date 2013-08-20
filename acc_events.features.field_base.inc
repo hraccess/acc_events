@@ -43,6 +43,7 @@ function acc_events_field_default_field_bases() {
         ),
       ),
       'entity_translation_sync' => FALSE,
+      'profile2_private' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
