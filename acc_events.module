@@ -10,7 +10,6 @@ include_once 'acc_events.features.inc';
  * Implements hook_cron()
  */
 function acc_events_cron() {
-    humanitarianresponse_core_feeds_check('acc_access_constraints', 'http://terms.humanitarianresponse.info/access-constraints.csv');
     humanitarianresponse_core_feeds_check('acc_access_events_feed', 'http://terms.humanitarianresponse.info/access-events.csv');
 }
 
